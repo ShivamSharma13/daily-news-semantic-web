@@ -1,10 +1,10 @@
 import requests
 from parser import *
 
-# TODO: Multi-threaded scraping
+# TODO: Multi-threaded crawling
 # Add more sites
 
-class Scraper(object):
+class Crawler(object):
 	''' To fetch web pages for a list of urls '''
 
 	def __init__(self, urls, *args, **kwargs):
@@ -22,7 +22,7 @@ class Scraper(object):
 	def run(self):
 		responses = []
 		for url in self.urls:
-			responses.append(Scraper.fetch(url))
+			responses.append(Crawler.fetch(url))
 		self.responses = responses
 
 	def get_responses(self):
@@ -32,9 +32,9 @@ class Scraper(object):
 def fetch_news_articles(news_article_links, how_many=10):
 	news_article_links = news_article_links[:how_many]
 	pprint(news_article_links)
-	scraper = Scraper(news_article_links)
-	scraper.run()
-	responses = scraper.get_responses()
+	crawler = Crawler(news_article_links)
+	crawler.run()
+	responses = crawler.get_responses()
 	news_articles = []
 
 	for i,url in enumerate(news_article_links):
@@ -52,9 +52,9 @@ if __name__ == '__main__':
 	
 	urls = ['https://timesofindia.indiatimes.com', 'https://www.ndtv.com']
 	
-	scraper = Scraper(urls)
-	scraper.run()
-	responses = scraper.get_responses()
+	crawler = Crawler(urls)
+	crawler.run()
+	responses = crawler.get_responses()
 
 	news_article_links = list()
 

@@ -131,7 +131,9 @@ class NewsArticleParser(Parser):
 		properties['type'] = urlparse(scope_tag['itemtype']).path.replace('/','')
 
 		for prop_tag in scope_tag.find_all(has_itemprop):
-			parent_prop_tag = prop_tag.findParent()
+			if not prop_tag or not prop_tag.attrs:
+				continue
+
 			itemprop = prop_tag['itemprop']
 
 			if prop_tag.name in ['a', 'link']:

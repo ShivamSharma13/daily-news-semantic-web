@@ -1,0 +1,115 @@
+@prefix : <http://search.com/newsarticle/ontology/> .
+@prefix location: <http://search.com/location/ontology/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dctype: <http://purl.org/dc/dcmitype/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+
+:NewsArticle 
+	rdf:type rdfs:Class ;	
+	rdfs:subClassOf dctype:Text .
+
+#========== Creating a seperate class for genres of News Articles. ==========#
+
+:NewsCategory 
+	rdf:type rdfs:Class ;
+	rdfs:comment "Gives News category for ex: Sports, World, National etc." ;
+	rdfs:label "Category" .
+
+:newsGenre
+	rdf:type rdf:Property ;
+	rdfs:range rdfs:Literal ;
+	rdfs:domain :NewsCategory .
+
+#========================== News Category Ends. =============================#
+
+:publishedOn
+	rdf:type rdf:Property ;
+	rdfs:comment "Date/Time of the resource-article getting published." ;
+    rdfs:label "Date" ;
+    rdfs:range rdfs:Literal ;
+    rdfs:domain :NewsArticle ;
+    rdfs:subPropertyOf dc:date, dcterms:date, dcterms:issued .
+
+:category
+	rdf:type owl:ObjectProperty ;
+	rdfs:comment "Broad category of the News Article." ;
+    rdfs:label "Category" ;
+    rdfs:range :NewsCategory ;
+    rdfs:domain :NewsArticle ;
+    rdfs:subPropertyOf dcterms:type .
+
+:headline
+	rdf:type rdf:Property ;
+	rdfs:comment "Headline of the News Article." ;
+	rdfs:label "Headline" ;
+	rdfs:range rdfs:Literal ;
+	rdfs:domain :NewsArticle ;
+	rdfs:subPropertyOf dc:title .
+
+:description
+	rdf:type rdf:Property ;
+	rdfs:comment "Description of the News Article." ;
+	rdfs:range rdfs:Literal ;
+	rdfs:domain :NewsArticle ;
+	rdfs:subPropertyOf dc:description .
+
+#====
+:publisher
+	rdf:type rdf:Property ;
+	rdfs:comment "Publisher of the News Article." ;
+	rdfs:label "Publisher" ;
+	rdfs:range dcterms:Agent ;
+	#Property to be used: http://purl.org/dc/terms/contributor
+	rdfs:domain :NewsArticle ;
+	rdfs:subPropertyOf dcterms:publisher, dcterms:rightsHolder, dcterms:source .
+
+#====
+:author
+	rdf:type owl:ObjectProperty ;
+	rdfs:comment "Author of the News Article." ;
+	rdfs:label "Author" ;
+	rdfs:range foaf:Person ;
+	rdfs:domain :NewsArticle ;
+	rdfs:subPropertyOf dcterms:contributor, dcterms:creator .
+
+#====
+:primaryLocation
+	rdf:type owl:ObjectProperty ;
+	rdfs:comment "Key Location about which the News Article is about." ;
+	rdfs:label "Location" ;
+	rdfs:range dcterms:Location ;
+	rdfs:domain :NewsArticle .
+
+#====
+:secondaryLocations
+	rdf:type owl:ObjectProperty ;
+	rdfs:comment "Secondary Locations about which the News Article is about." ;
+	rdfs:label "Secondary Location" ;
+	rdfs:range dcterms:Location ;
+	rdfs:domain :NewsArticle .
+
+#====
+:hasImage
+	rdf:type rdf:Property ;
+	rdfs:comment "Links to an Image the may be contained in the News Article." ;
+	rdfs:range dctype:Image ;
+	rdfs:domain :NewsArticle ;
+	rdfs:subPropertyOf dcterms:hasPart .
+
+:primaryKeyword
+	rdf:type rdf:Property ;
+	rdfs:comment "Primary keyword in the News Article." ;
+	rdfs:range rdfs:Literal ;
+	rdfs:domain :NewsArticle ;
+	rdfs:subPropertyOf dcterms:subject .
+
+:secondaryKeywords
+	rdf:type rdf:Property ;
+	rdfs:comment "Secondary keywords in the News Article." ;
+	rdfs:range rdfs:Literal ;
+	rdfs:domain :NewsArticle .

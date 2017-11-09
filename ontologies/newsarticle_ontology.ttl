@@ -1,3 +1,4 @@
+#<http://search.com/context#newsarticleontology>
 @prefix : <http://search.com/newsarticle/ontology/> .
 @prefix location: <http://search.com/location/ontology/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
@@ -112,4 +113,16 @@
 	rdf:type rdf:Property ;
 	rdfs:comment "Secondary keywords in the News Article." ;
 	rdfs:range rdfs:Literal ;
+	rdfs:domain :NewsArticle .
+
+:keyPerson
+	rdf:type rdf:Property ;
+	rdf:comment "Key person mentioned in the News Article." ;
+	rdfs:range foaf:Person ;
+	rdfs:domain :NewsArticle .
+
+:secondaryPerson
+	rdf:type rdf:Property ;
+	rdf:comment "Additional pupil mentioned in the News Article." ;
+	rdfs:range foaf:Person ;
 	rdfs:domain :NewsArticle .

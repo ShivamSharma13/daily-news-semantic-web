@@ -1,5 +1,5 @@
 import requests
-from parser import *
+from .parser import *
 
 # TODO: Multi-threaded crawling
 # Add more sites
@@ -31,7 +31,6 @@ class Crawler(object):
 
 def fetch_news_articles(news_article_links, how_many=10):
 	news_article_links = news_article_links[:how_many]
-	pprint(news_article_links)
 	crawler = Crawler(news_article_links)
 	crawler.run()
 	responses = crawler.get_responses()
@@ -45,13 +44,7 @@ def fetch_news_articles(news_article_links, how_many=10):
 	
 	return news_articles
 
-
-if __name__ == '__main__':
-	
-	from pprint import pprint
-	
-	urls = ['https://timesofindia.indiatimes.com', 'https://www.ndtv.com']
-	
+def crawl(urls, how_many=10):
 	crawler = Crawler(urls)
 	crawler.run()
 	responses = crawler.get_responses()
@@ -69,8 +62,17 @@ if __name__ == '__main__':
 			parser = LinkParser(responses[i].text, url)
 			news_article_links.extend(list(parser.parse()))
 	
-	print('News Article Links: ', len(news_article_links))
-	news_articles = fetch_news_articles(news_article_links)
+	return fetch_news_articles(news_article_links, how_many)
+
+
+
+if __name__ == '__main__':
+	
+	from pprint import pprint
+	
+	urls = ['https://timesofindia.indiatimes.com', 'https://www.ndtv.com']
+
+	news_articles = crawl(urls)
 
 	print('News Articles Fetched: ', len(news_articles))
 	pprint(news_articles)

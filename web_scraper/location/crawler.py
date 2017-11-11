@@ -2,6 +2,7 @@ import requests
 from bs4 import BeautifulSoup
 from urllib.parse import urljoin
 from pprint import pprint
+from unidecode import unidecode
 
 class LocationCollector(object):
 	def __init__(self, urls, *args, **kwargs):
@@ -72,13 +73,14 @@ class LocationCollector(object):
 		#Sometimes there is an Administrative state instead of a simple state. Like: Delhi, Andamans etc.
 		if state_container is None:
 			state_container = soup.find('tr' , {'itemtype' : 'http://schema.org/AdministrativeArea'})
-		state_name = state_container.find('span' , {'itemprop' : 'name'}).string.replace('&' , 'and')
-		cities_containers = soup.find_all('tr' , {'itemtype' : 'http://schema.org/City'})		
+		state_name = unidecode(state_container.find('span' , {'itemprop' : 'name'}).string.replace('&' , 'and'))
+		cities_containers = soup.find_all('tr' , {'itemtype' : 'http://schema.org/City'})
 		for city_container in cities_containers:
 			city_name = city_container.find('span' , {'itemprop' : 'name'}).string.replace('&' , 'and')
 			#parameter is taken as population of the latest census. [Inside td tag with class attribute : "prio1"]
 			city_parameter = city_container.find('td' , {'class' : 'prio1'}).string
 			if city_name is not None and city_parameter is not None:
+				city_name = unidecode(city_name)
 				try:
 					city_population = int(city_parameter.replace(',' , ''))
 					unsorted_ranks[city_population] = city_name
@@ -121,3 +123,6 @@ def run_crawler():
 	collector = LocationCollector(urls)
 	data = collector.parse_all()
 	return data
+
+if __name__ == '__main__':
+	print(run_crawler())

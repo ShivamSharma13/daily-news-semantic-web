@@ -1,5 +1,6 @@
-from crawler import run_crawler
-import json
+import os, json, sys
+sys.path.append(os.path.join(os.path.dirname(__file__), '../..'))
+from web_scraper.location.crawler import run_crawler
 
 def initialize_turtle_file(turtle_file_location):
 	context = '#<http://search.com/context#locationdata>\n'
@@ -38,8 +39,8 @@ def create_and_dump_triples(data, turtle_file_location, name = 'India', new_line
 
 if __name__ == '__main__':
 	data = run_crawler()
-	json_file_location = '../../Data/location.json'
-	turtle_file_location = '../../Data/location_data.ttl'
+	json_file_location = 'Data/location.json'
+	turtle_file_location = 'Data/location_data.ttl'
 	with open(json_file_location , 'w') as file:
 		json.dump(data , file)
 	#print("\n\nDumped data to a temporary File. Now reading...")

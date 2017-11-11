@@ -83,6 +83,9 @@ def run():
 	for article in articles:
 		article = article[0]
 		# pprint(article)
+		if not 'articleBody' in article:
+			continue
+
 		main_loc = re.search(r'^(?P<loc>([A-Z ]+/?)+): ?.*', article['articleBody']) # NEW DELHI/MUMBAI: 
 		if main_loc and main_loc.groupdict():
 			main_loc = [l.strip().lower() for l in main_loc.groupdict()['loc'].split('/')]
@@ -110,7 +113,7 @@ def run():
 #		if main_loc
 
 		author = {}
-		if 'name' in article['author']:
+		if article.get('author') and 'name' in article['author']:
 			author['name'] = conn.createLiteral(article['author']['name'], datatype=XMLSchema.STRING)
 			author['uri'] = conn.createURI(get_full_uri(author_name, 'P'))
 		
@@ -152,3 +155,7 @@ def run():
 		conn.addStatement(conn.createStatement(new_category, news_genre, article_section['type']))
 
 		conn.addStatement(conn.createStatement(news_article['uri'], get_full_uri('category'), news_category))
+
+
+if __name__ == '__main__':
+	run()

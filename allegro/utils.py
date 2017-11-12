@@ -13,7 +13,7 @@ HOST = 'http://search.com/'
 def traverse_ner(tree):
 	prev_child = None
 	entities = []
-
+	
 	def extract_word(leaves):
 		return " ".join([w[0] for w in leaves])
 
@@ -36,16 +36,17 @@ def named_entity_recognition(text, lower=True):
 	tokenizer = PunktSentenceTokenizer()
 	tokenized = tokenizer.tokenize(text)
 
+	persons, locations, organizations = [set() for _ in range(3)]
 	for sentence in tokenized:
 		words = word_tokenize(sentence)
 		tagged = pos_tag(words)
 		ner = ne_chunk(tagged)
 		entities = traverse_ner(ner)
-		persons, locations, organizations = [set() for _ in range(3)]
 
 		for entity in entities:
 			ne = entity[0]
 			ent = (entity[1].strip().lower() if lower else entity[1].strip())
+			print(ne, ent)
 			if ne == 'PERSON':
 				persons.add(ent)
 			elif ne == 'ORGANIZATION':

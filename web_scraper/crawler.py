@@ -54,13 +54,15 @@ def crawl(urls, how_many=10):
 	for i,url in enumerate(urls):
 		if responses[i] is None:
 			continue
-
-		if 'timesofindia' in url:
-			parser = TOIParser(responses[i].text, url)
-			news_article_links.extend(list(parser.parse()))
-		else:
-			parser = LinkParser(responses[i].text, url)
-			news_article_links.extend(list(parser.parse()))
+		try:
+			if 'timesofindia' in url:
+				parser = TOIParser(responses[i].text, url)
+				news_article_links.extend(list(parser.parse()))
+			else:
+				parser = LinkParser(responses[i].text, url)
+				news_article_links.extend(list(parser.parse()))
+		except:
+			continue
 	
 	return fetch_news_articles(news_article_links, how_many)
 

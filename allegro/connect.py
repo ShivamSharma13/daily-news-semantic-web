@@ -43,11 +43,11 @@ class AllegroConnection(object):
 
 
 	def setup(self):
-		ontologies_path = 'Ontologies'
+		ontologies_path = 'ontologies'
 		print('Adding Ontologies...')
 		AllegroConnection._add_files(ontologies_path , self.connection)
 		print('Ontologies added successfully.')
-		data_path = 'Data'
+		data_path = 'data'
 		print('Adding data files...')
 		AllegroConnection._add_files(data_path , self.connection)
 		print('Data files added successfully.')

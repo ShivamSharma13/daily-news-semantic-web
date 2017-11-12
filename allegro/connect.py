@@ -12,7 +12,7 @@ class AllegroConnection(object):
 
 	def establish_connection(self):
 		try:
-			server = AllegroGraphServer(host = 'localhost' , port = 10035 , user = self.username , password = self.password)
+			server = AllegroGraphServer(host = '192.168.1.27' , port = 10035 , user = self.username , password = self.password)
 			catalog = server.openCatalog(None)
 		except RequestError:
 			print("Please run the script again.")

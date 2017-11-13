@@ -39,8 +39,11 @@ def fetch_news_articles(news_article_links, how_many=10):
 	for i,url in enumerate(news_article_links):
 		if responses[i] is None:
 			continue
-		parser = NewsArticleParser(responses[i].text)
-		news_articles.append(parser.parse())
+		try:
+			parser = NewsArticleParser(responses[i].text)
+			news_articles.append(parser.parse())
+		except:
+			continue
 	
 	return news_articles
 

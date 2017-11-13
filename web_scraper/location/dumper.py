@@ -19,18 +19,18 @@ def create_and_dump_triples(data, turtle_file_location, name = 'India', new_line
 	predicate_belongsToCountry = 'location:belongsToCountry'
 	predicate_belongsToState = 'location:belongsToState'
 	file = open(turtle_file_location , 'a+')
-	file.write("country:" + str(country_id) + " " + str(predicate_title) + ' "' + str(name) + '" .' + str(new_line))
+	file.write("country:" + str(country_id) + " " + str(predicate_title) + ' "' + str(name).lower() + '" .' + str(new_line))
 	file.write('\n')
 	for state in data:
 		state_id = state['state_name'].lower().replace(" " , "_")
-		file.write("state:" + str(state_id) + " " + str(predicate_title) + ' "' + str(state['state_name']) + '" .' + str(new_line))
+		file.write("state:" + str(state_id) + " " + str(predicate_title) + ' "' + str(state['state_name']).lower() + '" .' + str(new_line))
 		file.write("state:" + str(state_id) + " " + str(predicate_belongsTo) + " country:" + str(country_id) + " ." + str(new_line))
 		file.write("state:" + str(state_id) + " " + str(predicate_belongsToCountry) + " country:" + str(country_id) + " ." + str(new_line))
 		file.write("country:" + str(country_id) + " " + str(predicate_hasState) + " state:" + str(state_id) + " ." + str(new_line))
 		file.write('\n')
 		for city in state['cities']:
 			city_id = city.lower().replace(" " , "_")
-			file.write("city:" + str(city_id) + " " + str(predicate_title) + ' "' + str(city) + '" .' + str(new_line))
+			file.write("city:" + str(city_id) + " " + str(predicate_title) + ' "' + str(city).lower() + '" .' + str(new_line))
 			file.write("city:" + str(city_id) + " " + str(predicate_belongsTo) + " state:" + str(state_id) + " ." + str(new_line))
 			file.write("city:" + str(city_id) + " " + str(predicate_belongsToState) + " state:" + str(state_id) + " ." + str(new_line))
 		file.write('\n\n')
@@ -39,8 +39,8 @@ def create_and_dump_triples(data, turtle_file_location, name = 'India', new_line
 
 if __name__ == '__main__':
 	data = run_crawler()
-	json_file_location = 'Data/location.json'
-	turtle_file_location = 'Data/location_data.ttl'
+	json_file_location = 'data/location.json'
+	turtle_file_location = 'data/location_data.ttl'
 	with open(json_file_location , 'w') as file:
 		json.dump(data , file)
 	#print("\n\nDumped data to a temporary File. Now reading...")

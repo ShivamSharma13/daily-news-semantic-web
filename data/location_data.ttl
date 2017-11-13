@@ -5,673 +5,673 @@
 @prefix location: <http://search.com/location/ontology/> .
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
 
-country:india dc:title "India" .
+country:india dc:title "india" .
 
-state:andaman_and_nicobar_islands dc:title "Andaman and Nicobar Islands" .
+state:andaman_and_nicobar_islands dc:title "andaman and nicobar islands" .
 state:andaman_and_nicobar_islands location:belongsTo country:india .
 state:andaman_and_nicobar_islands location:belongsToCountry country:india .
 country:india location:hasState state:andaman_and_nicobar_islands .
 
-city:port_blair dc:title "Port Blair" .
+city:port_blair dc:title "port blair" .
 city:port_blair location:belongsTo state:andaman_and_nicobar_islands .
 city:port_blair location:belongsToState state:andaman_and_nicobar_islands .
 
 
-state:andhra_pradesh dc:title "Andhra Pradesh" .
+state:andhra_pradesh dc:title "andhra pradesh" .
 state:andhra_pradesh location:belongsTo country:india .
 state:andhra_pradesh location:belongsToCountry country:india .
 country:india location:hasState state:andhra_pradesh .
 
-city:visakhapatnam dc:title "Visakhapatnam" .
+city:visakhapatnam dc:title "visakhapatnam" .
 city:visakhapatnam location:belongsTo state:andhra_pradesh .
 city:visakhapatnam location:belongsToState state:andhra_pradesh .
-city:vijayawada dc:title "Vijayawada" .
+city:vijayawada dc:title "vijayawada" .
 city:vijayawada location:belongsTo state:andhra_pradesh .
 city:vijayawada location:belongsToState state:andhra_pradesh .
-city:guntur dc:title "Guntur" .
+city:guntur dc:title "guntur" .
 city:guntur location:belongsTo state:andhra_pradesh .
 city:guntur location:belongsToState state:andhra_pradesh .
-city:nellore dc:title "Nellore" .
+city:nellore dc:title "nellore" .
 city:nellore location:belongsTo state:andhra_pradesh .
 city:nellore location:belongsToState state:andhra_pradesh .
-city:kurnool dc:title "Kurnool" .
+city:kurnool dc:title "kurnool" .
 city:kurnool location:belongsTo state:andhra_pradesh .
 city:kurnool location:belongsToState state:andhra_pradesh .
-city:rajahmundry dc:title "Rajahmundry" .
+city:rajahmundry dc:title "rajahmundry" .
 city:rajahmundry location:belongsTo state:andhra_pradesh .
 city:rajahmundry location:belongsToState state:andhra_pradesh .
-city:tirupati dc:title "Tirupati" .
+city:tirupati dc:title "tirupati" .
 city:tirupati location:belongsTo state:andhra_pradesh .
 city:tirupati location:belongsToState state:andhra_pradesh .
-city:kakinada dc:title "Kakinada" .
+city:kakinada dc:title "kakinada" .
 city:kakinada location:belongsTo state:andhra_pradesh .
 city:kakinada location:belongsToState state:andhra_pradesh .
 
 
-state:arunachal_pradesh dc:title "Arunachal Pradesh" .
+state:arunachal_pradesh dc:title "arunachal pradesh" .
 state:arunachal_pradesh location:belongsTo country:india .
 state:arunachal_pradesh location:belongsToCountry country:india .
 country:india location:hasState state:arunachal_pradesh .
 
-city:itanagar dc:title "Itanagar" .
+city:itanagar dc:title "itanagar" .
 city:itanagar location:belongsTo state:arunachal_pradesh .
 city:itanagar location:belongsToState state:arunachal_pradesh .
 
 
-state:assam dc:title "Assam" .
+state:assam dc:title "assam" .
 state:assam location:belongsTo country:india .
 state:assam location:belongsToCountry country:india .
 country:india location:hasState state:assam .
 
-city:guwahati dc:title "Guwahati" .
+city:guwahati dc:title "guwahati" .
 city:guwahati location:belongsTo state:assam .
 city:guwahati location:belongsToState state:assam .
-city:silchar dc:title "Silchar" .
+city:silchar dc:title "silchar" .
 city:silchar location:belongsTo state:assam .
 city:silchar location:belongsToState state:assam .
-city:dibrugarh dc:title "Dibrugarh" .
+city:dibrugarh dc:title "dibrugarh" .
 city:dibrugarh location:belongsTo state:assam .
 city:dibrugarh location:belongsToState state:assam .
 
 
-state:bihar dc:title "Bihar" .
+state:bihar dc:title "bihar" .
 state:bihar location:belongsTo country:india .
 state:bihar location:belongsToCountry country:india .
 country:india location:hasState state:bihar .
 
-city:patna dc:title "Patna" .
+city:patna dc:title "patna" .
 city:patna location:belongsTo state:bihar .
 city:patna location:belongsToState state:bihar .
-city:gaya dc:title "Gaya" .
+city:gaya dc:title "gaya" .
 city:gaya location:belongsTo state:bihar .
 city:gaya location:belongsToState state:bihar .
-city:bhagalpur dc:title "Bhagalpur" .
+city:bhagalpur dc:title "bhagalpur" .
 city:bhagalpur location:belongsTo state:bihar .
 city:bhagalpur location:belongsToState state:bihar .
-city:muzaffarpur dc:title "Muzaffarpur" .
+city:muzaffarpur dc:title "muzaffarpur" .
 city:muzaffarpur location:belongsTo state:bihar .
 city:muzaffarpur location:belongsToState state:bihar .
-city:purnia dc:title "Purnia" .
+city:purnia dc:title "purnia" .
 city:purnia location:belongsTo state:bihar .
 city:purnia location:belongsToState state:bihar .
-city:darbhanga dc:title "Darbhanga" .
+city:darbhanga dc:title "darbhanga" .
 city:darbhanga location:belongsTo state:bihar .
 city:darbhanga location:belongsToState state:bihar .
-city:bihar dc:title "Bihar" .
+city:bihar dc:title "bihar" .
 city:bihar location:belongsTo state:bihar .
 city:bihar location:belongsToState state:bihar .
-city:ara dc:title "Ara" .
+city:ara dc:title "ara" .
 city:ara location:belongsTo state:bihar .
 city:ara location:belongsToState state:bihar .
 
 
-state:chandigarh dc:title "Chandigarh" .
+state:chandigarh dc:title "chandigarh" .
 state:chandigarh location:belongsTo country:india .
 state:chandigarh location:belongsToCountry country:india .
 country:india location:hasState state:chandigarh .
 
-city:chandigarh dc:title "Chandigarh" .
+city:chandigarh dc:title "chandigarh" .
 city:chandigarh location:belongsTo state:chandigarh .
 city:chandigarh location:belongsToState state:chandigarh .
 
 
-state:chhattisgarh dc:title "Chhattisgarh" .
+state:chhattisgarh dc:title "chhattisgarh" .
 state:chhattisgarh location:belongsTo country:india .
 state:chhattisgarh location:belongsToCountry country:india .
 country:india location:hasState state:chhattisgarh .
 
-city:raipur dc:title "Raipur" .
+city:raipur dc:title "raipur" .
 city:raipur location:belongsTo state:chhattisgarh .
 city:raipur location:belongsToState state:chhattisgarh .
-city:bhilai dc:title "Bhilai" .
+city:bhilai dc:title "bhilai" .
 city:bhilai location:belongsTo state:chhattisgarh .
 city:bhilai location:belongsToState state:chhattisgarh .
-city:bilaspur dc:title "Bilaspur" .
+city:bilaspur dc:title "bilaspur" .
 city:bilaspur location:belongsTo state:chhattisgarh .
 city:bilaspur location:belongsToState state:chhattisgarh .
-city:korba dc:title "Korba" .
+city:korba dc:title "korba" .
 city:korba location:belongsTo state:chhattisgarh .
 city:korba location:belongsToState state:chhattisgarh .
 
 
-state:dadra_and_nagar_haveli dc:title "Dadra and Nagar Haveli" .
+state:dadra_and_nagar_haveli dc:title "dadra and nagar haveli" .
 state:dadra_and_nagar_haveli location:belongsTo country:india .
 state:dadra_and_nagar_haveli location:belongsToCountry country:india .
 country:india location:hasState state:dadra_and_nagar_haveli .
 
-city:silvassa dc:title "Silvassa" .
+city:silvassa dc:title "silvassa" .
 city:silvassa location:belongsTo state:dadra_and_nagar_haveli .
 city:silvassa location:belongsToState state:dadra_and_nagar_haveli .
 
 
-state:daman_and_diu dc:title "Daman and Diu" .
+state:daman_and_diu dc:title "daman and diu" .
 state:daman_and_diu location:belongsTo country:india .
 state:daman_and_diu location:belongsToCountry country:india .
 country:india location:hasState state:daman_and_diu .
 
-city:dadhel dc:title "Dadhel" .
+city:dadhel dc:title "dadhel" .
 city:dadhel location:belongsTo state:daman_and_diu .
 city:dadhel location:belongsToState state:daman_and_diu .
 
 
-state:delhi dc:title "Delhi" .
+state:delhi dc:title "delhi" .
 state:delhi location:belongsTo country:india .
 state:delhi location:belongsToCountry country:india .
 country:india location:hasState state:delhi .
 
-city:delhi dc:title "Delhi" .
+city:delhi dc:title "delhi" .
 city:delhi location:belongsTo state:delhi .
 city:delhi location:belongsToState state:delhi .
 
 
-state:goa dc:title "Goa" .
+state:goa dc:title "goa" .
 state:goa location:belongsTo country:india .
 state:goa location:belongsToCountry country:india .
 country:india location:hasState state:goa .
 
-city:panaji dc:title "Panaji" .
+city:panaji dc:title "panaji" .
 city:panaji location:belongsTo state:goa .
 city:panaji location:belongsToState state:goa .
 
 
-state:gujarat dc:title "Gujarat" .
+state:gujarat dc:title "gujarat" .
 state:gujarat location:belongsTo country:india .
 state:gujarat location:belongsToCountry country:india .
 country:india location:hasState state:gujarat .
 
-city:ahmadabad dc:title "Ahmadabad" .
+city:ahmadabad dc:title "ahmadabad" .
 city:ahmadabad location:belongsTo state:gujarat .
 city:ahmadabad location:belongsToState state:gujarat .
-city:surat dc:title "Surat" .
+city:surat dc:title "surat" .
 city:surat location:belongsTo state:gujarat .
 city:surat location:belongsToState state:gujarat .
-city:vadodara dc:title "Vadodara" .
+city:vadodara dc:title "vadodara" .
 city:vadodara location:belongsTo state:gujarat .
 city:vadodara location:belongsToState state:gujarat .
-city:rajkot dc:title "Rajkot" .
+city:rajkot dc:title "rajkot" .
 city:rajkot location:belongsTo state:gujarat .
 city:rajkot location:belongsToState state:gujarat .
-city:bhavnagar dc:title "Bhavnagar" .
+city:bhavnagar dc:title "bhavnagar" .
 city:bhavnagar location:belongsTo state:gujarat .
 city:bhavnagar location:belongsToState state:gujarat .
-city:jamnagar dc:title "Jamnagar" .
+city:jamnagar dc:title "jamnagar" .
 city:jamnagar location:belongsTo state:gujarat .
 city:jamnagar location:belongsToState state:gujarat .
-city:junagadh dc:title "Junagadh" .
+city:junagadh dc:title "junagadh" .
 city:junagadh location:belongsTo state:gujarat .
 city:junagadh location:belongsToState state:gujarat .
-city:anand dc:title "Anand" .
+city:anand dc:title "anand" .
 city:anand location:belongsTo state:gujarat .
 city:anand location:belongsToState state:gujarat .
 
 
-state:haryana dc:title "Haryana" .
+state:haryana dc:title "haryana" .
 state:haryana location:belongsTo country:india .
 state:haryana location:belongsToCountry country:india .
 country:india location:hasState state:haryana .
 
-city:faridabad dc:title "Faridabad" .
+city:faridabad dc:title "faridabad" .
 city:faridabad location:belongsTo state:haryana .
 city:faridabad location:belongsToState state:haryana .
-city:gurgaon dc:title "Gurgaon" .
+city:gurgaon dc:title "gurgaon" .
 city:gurgaon location:belongsTo state:haryana .
 city:gurgaon location:belongsToState state:haryana .
-city:panipat dc:title "Panipat" .
+city:panipat dc:title "panipat" .
 city:panipat location:belongsTo state:haryana .
 city:panipat location:belongsToState state:haryana .
-city:yamunanagar dc:title "Yamunanagar" .
+city:yamunanagar dc:title "yamunanagar" .
 city:yamunanagar location:belongsTo state:haryana .
 city:yamunanagar location:belongsToState state:haryana .
-city:rohtak dc:title "Rohtak" .
+city:rohtak dc:title "rohtak" .
 city:rohtak location:belongsTo state:haryana .
 city:rohtak location:belongsToState state:haryana .
-city:hisar dc:title "Hisar" .
+city:hisar dc:title "hisar" .
 city:hisar location:belongsTo state:haryana .
 city:hisar location:belongsToState state:haryana .
 
 
-state:himachal_pradesh dc:title "Himachal Pradesh" .
+state:himachal_pradesh dc:title "himachal pradesh" .
 state:himachal_pradesh location:belongsTo country:india .
 state:himachal_pradesh location:belongsToCountry country:india .
 country:india location:hasState state:himachal_pradesh .
 
-city:shimla dc:title "Shimla" .
+city:shimla dc:title "shimla" .
 city:shimla location:belongsTo state:himachal_pradesh .
 city:shimla location:belongsToState state:himachal_pradesh .
 
 
-state:jammu_and_kashmir dc:title "Jammu and Kashmir" .
+state:jammu_and_kashmir dc:title "jammu and kashmir" .
 state:jammu_and_kashmir location:belongsTo country:india .
 state:jammu_and_kashmir location:belongsToCountry country:india .
 country:india location:hasState state:jammu_and_kashmir .
 
-city:srinagar dc:title "Srinagar" .
+city:srinagar dc:title "srinagar" .
 city:srinagar location:belongsTo state:jammu_and_kashmir .
 city:srinagar location:belongsToState state:jammu_and_kashmir .
 
 
-state:jharkhand dc:title "Jharkhand" .
+state:jharkhand dc:title "jharkhand" .
 state:jharkhand location:belongsTo country:india .
 state:jharkhand location:belongsToCountry country:india .
 country:india location:hasState state:jharkhand .
 
-city:jamshedpur dc:title "Jamshedpur" .
+city:jamshedpur dc:title "jamshedpur" .
 city:jamshedpur location:belongsTo state:jharkhand .
 city:jamshedpur location:belongsToState state:jharkhand .
-city:dhanbad dc:title "Dhanbad" .
+city:dhanbad dc:title "dhanbad" .
 city:dhanbad location:belongsTo state:jharkhand .
 city:dhanbad location:belongsToState state:jharkhand .
-city:ranchi dc:title "Ranchi" .
+city:ranchi dc:title "ranchi" .
 city:ranchi location:belongsTo state:jharkhand .
 city:ranchi location:belongsToState state:jharkhand .
-city:bokaro_steel_city dc:title "Bokaro Steel City" .
+city:bokaro_steel_city dc:title "bokaro steel city" .
 city:bokaro_steel_city location:belongsTo state:jharkhand .
 city:bokaro_steel_city location:belongsToState state:jharkhand .
 
 
-state:karnataka dc:title "Karnataka" .
+state:karnataka dc:title "karnataka" .
 state:karnataka location:belongsTo country:india .
 state:karnataka location:belongsToCountry country:india .
 country:india location:hasState state:karnataka .
 
-city:bengaluru dc:title "Bengaluru" .
+city:bengaluru dc:title "bengaluru" .
 city:bengaluru location:belongsTo state:karnataka .
 city:bengaluru location:belongsToState state:karnataka .
-city:mysore dc:title "Mysore" .
+city:mysore dc:title "mysore" .
 city:mysore location:belongsTo state:karnataka .
 city:mysore location:belongsToState state:karnataka .
-city:hubli-dharwar dc:title "Hubli-Dharwar" .
+city:hubli-dharwar dc:title "hubli-dharwar" .
 city:hubli-dharwar location:belongsTo state:karnataka .
 city:hubli-dharwar location:belongsToState state:karnataka .
-city:mangalore dc:title "Mangalore" .
+city:mangalore dc:title "mangalore" .
 city:mangalore location:belongsTo state:karnataka .
 city:mangalore location:belongsToState state:karnataka .
-city:belgaum dc:title "Belgaum" .
+city:belgaum dc:title "belgaum" .
 city:belgaum location:belongsTo state:karnataka .
 city:belgaum location:belongsToState state:karnataka .
-city:gulbarga dc:title "Gulbarga" .
+city:gulbarga dc:title "gulbarga" .
 city:gulbarga location:belongsTo state:karnataka .
 city:gulbarga location:belongsToState state:karnataka .
-city:davanagere dc:title "Davanagere" .
+city:davanagere dc:title "davanagere" .
 city:davanagere location:belongsTo state:karnataka .
 city:davanagere location:belongsToState state:karnataka .
-city:bellary dc:title "Bellary" .
+city:bellary dc:title "bellary" .
 city:bellary location:belongsTo state:karnataka .
 city:bellary location:belongsToState state:karnataka .
 
 
-state:kerala dc:title "Kerala" .
+state:kerala dc:title "kerala" .
 state:kerala location:belongsTo country:india .
 state:kerala location:belongsToCountry country:india .
 country:india location:hasState state:kerala .
 
-city:kochi dc:title "Kochi" .
+city:kochi dc:title "kochi" .
 city:kochi location:belongsTo state:kerala .
 city:kochi location:belongsToState state:kerala .
-city:kozhikode dc:title "Kozhikode" .
+city:kozhikode dc:title "kozhikode" .
 city:kozhikode location:belongsTo state:kerala .
 city:kozhikode location:belongsToState state:kerala .
-city:thrissur dc:title "Thrissur" .
+city:thrissur dc:title "thrissur" .
 city:thrissur location:belongsTo state:kerala .
 city:thrissur location:belongsToState state:kerala .
 
 
-state:lakshadweep dc:title "Lakshadweep" .
+state:lakshadweep dc:title "lakshadweep" .
 state:lakshadweep location:belongsTo country:india .
 state:lakshadweep location:belongsToCountry country:india .
 country:india location:hasState state:lakshadweep .
 
-city:kavaratti dc:title "Kavaratti" .
+city:kavaratti dc:title "kavaratti" .
 city:kavaratti location:belongsTo state:lakshadweep .
 city:kavaratti location:belongsToState state:lakshadweep .
 
 
-state:madhya_pradesh dc:title "Madhya Pradesh" .
+state:madhya_pradesh dc:title "madhya pradesh" .
 state:madhya_pradesh location:belongsTo country:india .
 state:madhya_pradesh location:belongsToCountry country:india .
 country:india location:hasState state:madhya_pradesh .
 
-city:indore dc:title "Indore" .
+city:indore dc:title "indore" .
 city:indore location:belongsTo state:madhya_pradesh .
 city:indore location:belongsToState state:madhya_pradesh .
-city:bhopal dc:title "Bhopal" .
+city:bhopal dc:title "bhopal" .
 city:bhopal location:belongsTo state:madhya_pradesh .
 city:bhopal location:belongsToState state:madhya_pradesh .
-city:jabalpur dc:title "Jabalpur" .
+city:jabalpur dc:title "jabalpur" .
 city:jabalpur location:belongsTo state:madhya_pradesh .
 city:jabalpur location:belongsToState state:madhya_pradesh .
-city:gwalior dc:title "Gwalior" .
+city:gwalior dc:title "gwalior" .
 city:gwalior location:belongsTo state:madhya_pradesh .
 city:gwalior location:belongsToState state:madhya_pradesh .
-city:ujjain dc:title "Ujjain" .
+city:ujjain dc:title "ujjain" .
 city:ujjain location:belongsTo state:madhya_pradesh .
 city:ujjain location:belongsToState state:madhya_pradesh .
-city:sagar dc:title "Sagar" .
+city:sagar dc:title "sagar" .
 city:sagar location:belongsTo state:madhya_pradesh .
 city:sagar location:belongsToState state:madhya_pradesh .
-city:dewas dc:title "Dewas" .
+city:dewas dc:title "dewas" .
 city:dewas location:belongsTo state:madhya_pradesh .
 city:dewas location:belongsToState state:madhya_pradesh .
-city:satna dc:title "Satna" .
+city:satna dc:title "satna" .
 city:satna location:belongsTo state:madhya_pradesh .
 city:satna location:belongsToState state:madhya_pradesh .
 
 
-state:maharashtra dc:title "Maharashtra" .
+state:maharashtra dc:title "maharashtra" .
 state:maharashtra location:belongsTo country:india .
 state:maharashtra location:belongsToCountry country:india .
 country:india location:hasState state:maharashtra .
 
-city:mumbai dc:title "Mumbai" .
+city:mumbai dc:title "mumbai" .
 city:mumbai location:belongsTo state:maharashtra .
 city:mumbai location:belongsToState state:maharashtra .
-city:pune dc:title "Pune" .
+city:pune dc:title "pune" .
 city:pune location:belongsTo state:maharashtra .
 city:pune location:belongsToState state:maharashtra .
-city:nagpur dc:title "Nagpur" .
+city:nagpur dc:title "nagpur" .
 city:nagpur location:belongsTo state:maharashtra .
 city:nagpur location:belongsToState state:maharashtra .
-city:nashik dc:title "Nashik" .
+city:nashik dc:title "nashik" .
 city:nashik location:belongsTo state:maharashtra .
 city:nashik location:belongsToState state:maharashtra .
-city:vasai-virar dc:title "Vasai-Virar" .
+city:vasai-virar dc:title "vasai-virar" .
 city:vasai-virar location:belongsTo state:maharashtra .
 city:vasai-virar location:belongsToState state:maharashtra .
-city:aurangabad dc:title "Aurangabad" .
+city:aurangabad dc:title "aurangabad" .
 city:aurangabad location:belongsTo state:maharashtra .
 city:aurangabad location:belongsToState state:maharashtra .
-city:solapur dc:title "Solapur" .
+city:solapur dc:title "solapur" .
 city:solapur location:belongsTo state:maharashtra .
 city:solapur location:belongsToState state:maharashtra .
-city:bhiwandi dc:title "Bhiwandi" .
+city:bhiwandi dc:title "bhiwandi" .
 city:bhiwandi location:belongsTo state:maharashtra .
 city:bhiwandi location:belongsToState state:maharashtra .
 
 
-state:manipur dc:title "Manipur" .
+state:manipur dc:title "manipur" .
 state:manipur location:belongsTo country:india .
 state:manipur location:belongsToCountry country:india .
 country:india location:hasState state:manipur .
 
-city:imphal dc:title "Imphal" .
+city:imphal dc:title "imphal" .
 city:imphal location:belongsTo state:manipur .
 city:imphal location:belongsToState state:manipur .
 
 
-state:meghalaya dc:title "Meghalaya" .
+state:meghalaya dc:title "meghalaya" .
 state:meghalaya location:belongsTo country:india .
 state:meghalaya location:belongsToCountry country:india .
 country:india location:hasState state:meghalaya .
 
-city:shillong dc:title "Shillong" .
+city:shillong dc:title "shillong" .
 city:shillong location:belongsTo state:meghalaya .
 city:shillong location:belongsToState state:meghalaya .
 
 
-state:mizoram dc:title "Mizoram" .
+state:mizoram dc:title "mizoram" .
 state:mizoram location:belongsTo country:india .
 state:mizoram location:belongsToCountry country:india .
 country:india location:hasState state:mizoram .
 
-city:aizawl dc:title "Aizawl" .
+city:aizawl dc:title "aizawl" .
 city:aizawl location:belongsTo state:mizoram .
 city:aizawl location:belongsToState state:mizoram .
 
 
-state:nagaland dc:title "Nagaland" .
+state:nagaland dc:title "nagaland" .
 state:nagaland location:belongsTo country:india .
 state:nagaland location:belongsToCountry country:india .
 country:india location:hasState state:nagaland .
 
-city:dimapur dc:title "Dimapur" .
+city:dimapur dc:title "dimapur" .
 city:dimapur location:belongsTo state:nagaland .
 city:dimapur location:belongsToState state:nagaland .
 
 
-state:odisha dc:title "Odisha" .
+state:odisha dc:title "odisha" .
 state:odisha location:belongsTo country:india .
 state:odisha location:belongsToCountry country:india .
 country:india location:hasState state:odisha .
 
-city:bhubaneswar dc:title "Bhubaneswar" .
+city:bhubaneswar dc:title "bhubaneswar" .
 city:bhubaneswar location:belongsTo state:odisha .
 city:bhubaneswar location:belongsToState state:odisha .
-city:cuttack dc:title "Cuttack" .
+city:cuttack dc:title "cuttack" .
 city:cuttack location:belongsTo state:odisha .
 city:cuttack location:belongsToState state:odisha .
-city:raurkela dc:title "Raurkela" .
+city:raurkela dc:title "raurkela" .
 city:raurkela location:belongsTo state:odisha .
 city:raurkela location:belongsToState state:odisha .
-city:brahmapur dc:title "Brahmapur" .
+city:brahmapur dc:title "brahmapur" .
 city:brahmapur location:belongsTo state:odisha .
 city:brahmapur location:belongsToState state:odisha .
-city:sambalpur dc:title "Sambalpur" .
+city:sambalpur dc:title "sambalpur" .
 city:sambalpur location:belongsTo state:odisha .
 city:sambalpur location:belongsToState state:odisha .
-city:puri dc:title "Puri" .
+city:puri dc:title "puri" .
 city:puri location:belongsTo state:odisha .
 city:puri location:belongsToState state:odisha .
 
 
-state:puducherry dc:title "Puducherry" .
+state:puducherry dc:title "puducherry" .
 state:puducherry location:belongsTo country:india .
 state:puducherry location:belongsToCountry country:india .
 country:india location:hasState state:puducherry .
 
-city:puducherry dc:title "Puducherry" .
+city:puducherry dc:title "puducherry" .
 city:puducherry location:belongsTo state:puducherry .
 city:puducherry location:belongsToState state:puducherry .
 
 
-state:punjab dc:title "Punjab" .
+state:punjab dc:title "punjab" .
 state:punjab location:belongsTo country:india .
 state:punjab location:belongsToCountry country:india .
 country:india location:hasState state:punjab .
 
-city:ludhiana dc:title "Ludhiana" .
+city:ludhiana dc:title "ludhiana" .
 city:ludhiana location:belongsTo state:punjab .
 city:ludhiana location:belongsToState state:punjab .
-city:amritsar dc:title "Amritsar" .
+city:amritsar dc:title "amritsar" .
 city:amritsar location:belongsTo state:punjab .
 city:amritsar location:belongsToState state:punjab .
-city:jalandhar dc:title "Jalandhar" .
+city:jalandhar dc:title "jalandhar" .
 city:jalandhar location:belongsTo state:punjab .
 city:jalandhar location:belongsToState state:punjab .
-city:patiala dc:title "Patiala" .
+city:patiala dc:title "patiala" .
 city:patiala location:belongsTo state:punjab .
 city:patiala location:belongsToState state:punjab .
-city:bathinda dc:title "Bathinda" .
+city:bathinda dc:title "bathinda" .
 city:bathinda location:belongsTo state:punjab .
 city:bathinda location:belongsToState state:punjab .
-city:s.a.s._nagar dc:title "S.A.S. Nagar" .
+city:s.a.s._nagar dc:title "s.a.s. nagar" .
 city:s.a.s._nagar location:belongsTo state:punjab .
 city:s.a.s._nagar location:belongsToState state:punjab .
-city:hoshiarpur dc:title "Hoshiarpur" .
+city:hoshiarpur dc:title "hoshiarpur" .
 city:hoshiarpur location:belongsTo state:punjab .
 city:hoshiarpur location:belongsToState state:punjab .
-city:moga dc:title "Moga" .
+city:moga dc:title "moga" .
 city:moga location:belongsTo state:punjab .
 city:moga location:belongsToState state:punjab .
 
 
-state:rajasthan dc:title "Rajasthan" .
+state:rajasthan dc:title "rajasthan" .
 state:rajasthan location:belongsTo country:india .
 state:rajasthan location:belongsToCountry country:india .
 country:india location:hasState state:rajasthan .
 
-city:jaipur dc:title "Jaipur" .
+city:jaipur dc:title "jaipur" .
 city:jaipur location:belongsTo state:rajasthan .
 city:jaipur location:belongsToState state:rajasthan .
-city:jodhpur dc:title "Jodhpur" .
+city:jodhpur dc:title "jodhpur" .
 city:jodhpur location:belongsTo state:rajasthan .
 city:jodhpur location:belongsToState state:rajasthan .
-city:kota dc:title "Kota" .
+city:kota dc:title "kota" .
 city:kota location:belongsTo state:rajasthan .
 city:kota location:belongsToState state:rajasthan .
-city:bikaner dc:title "Bikaner" .
+city:bikaner dc:title "bikaner" .
 city:bikaner location:belongsTo state:rajasthan .
 city:bikaner location:belongsToState state:rajasthan .
-city:ajmer dc:title "Ajmer" .
+city:ajmer dc:title "ajmer" .
 city:ajmer location:belongsTo state:rajasthan .
 city:ajmer location:belongsToState state:rajasthan .
-city:udaipur dc:title "Udaipur" .
+city:udaipur dc:title "udaipur" .
 city:udaipur location:belongsTo state:rajasthan .
 city:udaipur location:belongsToState state:rajasthan .
-city:bhilwara dc:title "Bhilwara" .
+city:bhilwara dc:title "bhilwara" .
 city:bhilwara location:belongsTo state:rajasthan .
 city:bhilwara location:belongsToState state:rajasthan .
-city:alwar dc:title "Alwar" .
+city:alwar dc:title "alwar" .
 city:alwar location:belongsTo state:rajasthan .
 city:alwar location:belongsToState state:rajasthan .
 
 
-state:sikkim dc:title "Sikkim" .
+state:sikkim dc:title "sikkim" .
 state:sikkim location:belongsTo country:india .
 state:sikkim location:belongsToCountry country:india .
 country:india location:hasState state:sikkim .
 
-city:gangtok dc:title "Gangtok" .
+city:gangtok dc:title "gangtok" .
 city:gangtok location:belongsTo state:sikkim .
 city:gangtok location:belongsToState state:sikkim .
 
 
-state:tamil_nadu dc:title "Tamil Nadu" .
+state:tamil_nadu dc:title "tamil nadu" .
 state:tamil_nadu location:belongsTo country:india .
 state:tamil_nadu location:belongsToCountry country:india .
 country:india location:hasState state:tamil_nadu .
 
-city:chennai dc:title "Chennai" .
+city:chennai dc:title "chennai" .
 city:chennai location:belongsTo state:tamil_nadu .
 city:chennai location:belongsToState state:tamil_nadu .
-city:coimbatore dc:title "Coimbatore" .
+city:coimbatore dc:title "coimbatore" .
 city:coimbatore location:belongsTo state:tamil_nadu .
 city:coimbatore location:belongsToState state:tamil_nadu .
-city:madurai dc:title "Madurai" .
+city:madurai dc:title "madurai" .
 city:madurai location:belongsTo state:tamil_nadu .
 city:madurai location:belongsToState state:tamil_nadu .
-city:tiruchirappalli dc:title "Tiruchirappalli" .
+city:tiruchirappalli dc:title "tiruchirappalli" .
 city:tiruchirappalli location:belongsTo state:tamil_nadu .
 city:tiruchirappalli location:belongsToState state:tamil_nadu .
-city:tiruppur dc:title "Tiruppur" .
+city:tiruppur dc:title "tiruppur" .
 city:tiruppur location:belongsTo state:tamil_nadu .
 city:tiruppur location:belongsToState state:tamil_nadu .
-city:salem dc:title "Salem" .
+city:salem dc:title "salem" .
 city:salem location:belongsTo state:tamil_nadu .
 city:salem location:belongsToState state:tamil_nadu .
-city:erode dc:title "Erode" .
+city:erode dc:title "erode" .
 city:erode location:belongsTo state:tamil_nadu .
 city:erode location:belongsToState state:tamil_nadu .
-city:tirunelveli dc:title "Tirunelveli" .
+city:tirunelveli dc:title "tirunelveli" .
 city:tirunelveli location:belongsTo state:tamil_nadu .
 city:tirunelveli location:belongsToState state:tamil_nadu .
 
 
-state:telangana dc:title "Telangana" .
+state:telangana dc:title "telangana" .
 state:telangana location:belongsTo country:india .
 state:telangana location:belongsToCountry country:india .
 country:india location:hasState state:telangana .
 
-city:hyderabad dc:title "Hyderabad" .
+city:hyderabad dc:title "hyderabad" .
 city:hyderabad location:belongsTo state:telangana .
 city:hyderabad location:belongsToState state:telangana .
-city:warangal dc:title "Warangal" .
+city:warangal dc:title "warangal" .
 city:warangal location:belongsTo state:telangana .
 city:warangal location:belongsToState state:telangana .
-city:nizamabad dc:title "Nizamabad" .
+city:nizamabad dc:title "nizamabad" .
 city:nizamabad location:belongsTo state:telangana .
 city:nizamabad location:belongsToState state:telangana .
-city:karimnagar dc:title "Karimnagar" .
+city:karimnagar dc:title "karimnagar" .
 city:karimnagar location:belongsTo state:telangana .
 city:karimnagar location:belongsToState state:telangana .
-city:khammam dc:title "Khammam" .
+city:khammam dc:title "khammam" .
 city:khammam location:belongsTo state:telangana .
 city:khammam location:belongsToState state:telangana .
-city:ramagundam dc:title "Ramagundam" .
+city:ramagundam dc:title "ramagundam" .
 city:ramagundam location:belongsTo state:telangana .
 city:ramagundam location:belongsToState state:telangana .
 
 
-state:tripura dc:title "Tripura" .
+state:tripura dc:title "tripura" .
 state:tripura location:belongsTo country:india .
 state:tripura location:belongsToCountry country:india .
 country:india location:hasState state:tripura .
 
-city:agartala dc:title "Agartala" .
+city:agartala dc:title "agartala" .
 city:agartala location:belongsTo state:tripura .
 city:agartala location:belongsToState state:tripura .
 
 
-state:uttar_pradesh dc:title "Uttar Pradesh" .
+state:uttar_pradesh dc:title "uttar pradesh" .
 state:uttar_pradesh location:belongsTo country:india .
 state:uttar_pradesh location:belongsToCountry country:india .
 country:india location:hasState state:uttar_pradesh .
 
-city:kanpur dc:title "Kanpur" .
+city:kanpur dc:title "kanpur" .
 city:kanpur location:belongsTo state:uttar_pradesh .
 city:kanpur location:belongsToState state:uttar_pradesh .
-city:lucknow dc:title "Lucknow" .
+city:lucknow dc:title "lucknow" .
 city:lucknow location:belongsTo state:uttar_pradesh .
 city:lucknow location:belongsToState state:uttar_pradesh .
-city:ghaziabad dc:title "Ghaziabad" .
+city:ghaziabad dc:title "ghaziabad" .
 city:ghaziabad location:belongsTo state:uttar_pradesh .
 city:ghaziabad location:belongsToState state:uttar_pradesh .
-city:agra dc:title "Agra" .
+city:agra dc:title "agra" .
 city:agra location:belongsTo state:uttar_pradesh .
 city:agra location:belongsToState state:uttar_pradesh .
-city:varanasi dc:title "Varanasi" .
+city:varanasi dc:title "varanasi" .
 city:varanasi location:belongsTo state:uttar_pradesh .
 city:varanasi location:belongsToState state:uttar_pradesh .
-city:meerut dc:title "Meerut" .
+city:meerut dc:title "meerut" .
 city:meerut location:belongsTo state:uttar_pradesh .
 city:meerut location:belongsToState state:uttar_pradesh .
-city:allahabad dc:title "Allahabad" .
+city:allahabad dc:title "allahabad" .
 city:allahabad location:belongsTo state:uttar_pradesh .
 city:allahabad location:belongsToState state:uttar_pradesh .
-city:bareilly dc:title "Bareilly" .
+city:bareilly dc:title "bareilly" .
 city:bareilly location:belongsTo state:uttar_pradesh .
 city:bareilly location:belongsToState state:uttar_pradesh .
 
 
-state:uttarakhand dc:title "Uttarakhand" .
+state:uttarakhand dc:title "uttarakhand" .
 state:uttarakhand location:belongsTo country:india .
 state:uttarakhand location:belongsToCountry country:india .
 country:india location:hasState state:uttarakhand .
 
-city:dehra_dun dc:title "Dehra Dun" .
+city:dehra_dun dc:title "dehra dun" .
 city:dehra_dun location:belongsTo state:uttarakhand .
 city:dehra_dun location:belongsToState state:uttarakhand .
-city:hardwar dc:title "Hardwar" .
+city:hardwar dc:title "hardwar" .
 city:hardwar location:belongsTo state:uttarakhand .
 city:hardwar location:belongsToState state:uttarakhand .
 
 
-state:west_bengal dc:title "West Bengal" .
+state:west_bengal dc:title "west bengal" .
 state:west_bengal location:belongsTo country:india .
 state:west_bengal location:belongsToCountry country:india .
 country:india location:hasState state:west_bengal .
 
-city:kolkata dc:title "Kolkata" .
+city:kolkata dc:title "kolkata" .
 city:kolkata location:belongsTo state:west_bengal .
 city:kolkata location:belongsToState state:west_bengal .
-city:asansol dc:title "Asansol" .
+city:asansol dc:title "asansol" .
 city:asansol location:belongsTo state:west_bengal .
 city:asansol location:belongsToState state:west_bengal .
-city:shiliguri dc:title "Shiliguri" .
+city:shiliguri dc:title "shiliguri" .
 city:shiliguri location:belongsTo state:west_bengal .
 city:shiliguri location:belongsToState state:west_bengal .
-city:durgapur dc:title "Durgapur" .
+city:durgapur dc:title "durgapur" .
 city:durgapur location:belongsTo state:west_bengal .
 city:durgapur location:belongsToState state:west_bengal .
-city:bardhaman dc:title "Bardhaman" .
+city:bardhaman dc:title "bardhaman" .
 city:bardhaman location:belongsTo state:west_bengal .
 city:bardhaman location:belongsToState state:west_bengal .
-city:ingraj_bazar dc:title "Ingraj Bazar" .
+city:ingraj_bazar dc:title "ingraj bazar" .
 city:ingraj_bazar location:belongsTo state:west_bengal .
 city:ingraj_bazar location:belongsToState state:west_bengal .
-city:baharampur dc:title "Baharampur" .
+city:baharampur dc:title "baharampur" .
 city:baharampur location:belongsTo state:west_bengal .
 city:baharampur location:belongsToState state:west_bengal .
-city:habra dc:title "Habra" .
+city:habra dc:title "habra" .
 city:habra location:belongsTo state:west_bengal .
 city:habra location:belongsToState state:west_bengal .
 

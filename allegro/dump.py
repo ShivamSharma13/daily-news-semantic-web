@@ -22,7 +22,7 @@ from allegro.connect import AllegroConnection
 from allegro.utils import *
 from web_scraper.crawler import crawl
 
-def dump(articles, conn):
+def dump(conn, articles):
 	for article in articles:
 		article = article[0]
 		# pprint(article)
@@ -88,7 +88,7 @@ def dump(articles, conn):
 		# Add persons
 		secondary_per_uri = conn.createURI(get_uri('secondaryPersons'))
 		for person in persons:
-			person_uri = conn.createURI(get_uri(normalize(person)), 'P')
+			person_uri = conn.createURI(get_uri(normalize(person), 'P'))
 			add_quad(conn, person_uri, conn.createURI(get_uri('fullName', 'P')), conn.createLiteral(person, datatype=XMLSchema.STRING), get_context_uri('P'))
 
 			subject, predicate, obj, context = news_article['uri'], secondary_per_uri, person_uri, get_context_uri('A')
@@ -161,4 +161,4 @@ if __name__ == '__main__':
 	connection.establish_connection()
 	conn = connection.connection
 
-	dump(articles, conn)
+	dump(conn, articles)
